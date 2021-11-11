@@ -1,107 +1,7 @@
 {"intents": [
     {
-      "intent": "payment",
-      "examples": [
-        {
-          "text": "recharge my mobile"
-        },
-        {
-          "text": "pay my bills"
-        },
-        {
-          "text": "pay my monthly bill"
-        },
-        {
-          "text": "pay now"
-        },
-        {
-          "text": "pay prepaid bill"
-        },
-        {
-          "text": "pay the bill on this"
-        },
-        {
-          "text": "make a payment"
-        },
-        {
-          "text": "make bill payment"
-        },
-        {
-          "text": "pay the last statement balance on"
-        }
-      ]
-    },
-    {
-      "intent": "Failed",
-      "examples": [
-        {
-          "text": "How do I return the product?"
-        },
-        {
-          "text": "failed"
-        },
-        {
-          "text": "error on page"
-        },
-        {
-          "text": "did not go through"
-        },
-        {
-          "text": "debited twice"
-        },
-        {
-          "text": "crashed"
-        },
-        {
-          "text": "expired"
-        },
-        {
-          "text": "unavailable"
-        },
-        {
-          "text": "The product description is different from the display"
-        },
-        {
-          "text": "site is down"
-        },
-        {
-          "text": "session timed out"
-        },
-        {
-          "text": "out of stock"
-        },
-        {
-          "text": "not working"
-        },
-        {
-          "text": "not received"
-        },
-        {
-          "text": "not loading"
-        },
-        {
-          "text": "not displayed"
-        },
-        {
-          "text": "not applied"
-        },
-        {
-          "text": "My payment did not go through. What do I do?"
-        },
-        {
-          "text": "i want to return the product"
-        },
-        {
-          "text": "is not available"
-        }
-      ]
-    },
-    {
       "intent": "accountbalance",
       "examples": [
-        {
-          "text": "balance"
-        },
         {
           "text": "account balance"
         },
@@ -170,107 +70,6 @@
       ]
     },
     {
-      "intent": "Access",
-      "examples": [
-        {
-          "text": "how to use"
-        },
-        {
-          "text": "not able to select"
-        },
-        {
-          "text": "not able to check"
-        },
-        {
-          "text": "not able to access"
-        },
-        {
-          "text": "i need access to"
-        },
-        {
-          "text": "i could not find"
-        },
-        {
-          "text": "how to select"
-        },
-        {
-          "text": "how do i check"
-        },
-        {
-          "text": "how can i check"
-        }
-      ]
-    },
-    {
-      "intent": "recommend",
-      "examples": [
-        {
-          "text": "can you recommend"
-        },
-        {
-          "text": "looking for a loan"
-        },
-        {
-          "text": "looking to purchase"
-        },
-        {
-          "text": "suggest me some gifts"
-        },
-        {
-          "text": "want to buy"
-        },
-        {
-          "text": "what are the recommendations for"
-        }
-      ]
-    },
-    {
-      "intent": "feedback",
-      "examples": [
-        {
-          "text": "leave a comment"
-        },
-        {
-          "text": "provide feedback"
-        },
-        {
-          "text": "provide a feedback"
-        },
-        {
-          "text": "post feedback"
-        },
-        {
-          "text": "provide rating"
-        },
-        {
-          "text": "post comments"
-        }
-      ]
-    },
-    {
-      "intent": "define",
-      "examples": [
-        {
-          "text": "what is a"
-        },
-        {
-          "text": "what is merchant site"
-        },
-        {
-          "text": "what is meant by"
-        },
-        {
-          "text": "explain"
-        },
-        {
-          "text": "define"
-        },
-        {
-          "text": "tell me about"
-        }
-      ]
-    },
-    {
       "intent": "Greetings",
       "examples": [
         {
@@ -287,55 +86,6 @@
         },
         {
           "text": "how are you"
-        }
-      ]
-    },
-    {
-      "intent": "comparison",
-      "examples": [
-        {
-          "text": "how are they different"
-        },
-        {
-          "text": "compare the products"
-        },
-        {
-          "text": "how are they similar"
-        },
-        {
-          "text": "how is it better than"
-        },
-        {
-          "text": "how it is different from"
-        },
-        {
-          "text": "what are the differentiating factor"
-        },
-        {
-          "text": "in comparison to the other"
-        }
-      ]
-    },
-    {
-      "intent": "Excited",
-      "examples": [
-        {
-          "text": "great"
-        },
-        {
-          "text": "that is great"
-        },
-        {
-          "text": "thats nice"
-        },
-        {
-          "text": "thats great"
-        },
-        {
-          "text": "wow"
-        },
-        {
-          "text": "awesome"
         }
       ]
     },
@@ -434,17 +184,6 @@
       ]
     },
     {
-      "intent": "Addbeneficiary",
-      "examples": [
-        {
-          "text": "add a beneficiary"
-        },
-        {
-          "text": "add an account for transferring money"
-        }
-      ]
-    },
-    {
       "intent": "FundTransfer",
       "examples": [
         {
@@ -478,38 +217,6 @@
         },
         {
           "text": "can i speak to someone"
-        }
-      ]
-    },
-    {
-      "intent": "Viewtransactions",
-      "examples": [
-        {
-          "text": "what were my dining expenses"
-        },
-        {
-          "text": "show my transactions"
-        },
-        {
-          "text": "provide me an account statement"
-        },
-        {
-          "text": "can i have a look at my transactions"
-        },
-        {
-          "text": "list down by recent transactions"
-        },
-        {
-          "text": "what were my transactions"
-        },
-        {
-          "text": "what were my expenses"
-        },
-        {
-          "text": "what are the activities on my account"
-        },
-        {
-          "text": "view my transactions"
         }
       ]
     },
@@ -560,74 +267,10 @@
       ]
     },
     {
-      "intent": "branchInfo",
-      "examples": [
-        {
-          "text": "branch details in India"
-        },
-        {
-          "text": "Do we have a branch in new york?"
-        },
-        {
-          "text": "where are the branches in mumbai"
-        },
-        {
-          "text": "which are the branches in US?"
-        },
-        {
-          "text": "i want to visit the nearest branch"
-        },
-        {
-          "text": "help me with branches in andheri"
-        },
-        {
-          "text": "is there a branch in cochin"
-        },
-        {
-          "text": "are there branches outside India"
-        },
-        {
-          "text": "could you give me the branch address at Andheri"
-        }
-      ]
-    },
-    {
-      "intent": "MoreInfo",
-      "examples": [
-        {
-          "text": "more info"
-        },
-        {
-          "text": "could you tell me more"
-        },
-        {
-          "text": "tell me about it"
-        },
-        {
-          "text": "more details"
-        },
-        {
-          "text": "Could you tell me more about it"
-        },
-        {
-          "text": "more information"
-        },
-        {
-          "text": "could you give more details"
-        }
-      ]
-    },
-    {
       "intent": "Ok",
       "examples": [
         {
-          "text": "cancel"
-        },
-        {
           "text": "thanks"
-        },
-        {
-          "text": "nothing"
         },
         {
           "text": "thanks a lot"
@@ -636,22 +279,7 @@
           "text": "thanks for your support"
         },
         {
-          "text": "nope"
-        },
-        {
-          "text": "no"
-        },
-        {
-          "text": "fine"
-        },
-        {
           "text": "cool"
-        },
-        {
-          "text": "allright"
-        },
-        {
-          "text": "all right"
         },
         {
           "text": "bye"
@@ -679,56 +307,48 @@
         },
         {
           "text": "ok"
-        },
-        {
-          "text": "not required"
         }
       ]
-    },
-    {
-      "intent": "negative_feedback",
-      "examples": [
-        {
-          "text": "I want to talk to a human"
-        },
-        {
-          "text": "why are you so difficult?"
-        },
-        {
-          "text": "you are an idiot!"
-        },
-        {
-          "text": "this is stupid"
-        },
-        {
-          "text": "you are frustrating"
-        },
-        {
-          "text": "I'm getting mad!"
-        },
-        {
-          "text": "robots are boring"
-        },
-        {
-          "text": "everyone hates you"
-        },
-        {
-          "text": "I hate this!"
-        },
-        {
-          "text": "I need to talk to your manager"
-        },
-        {
-          "text": "I do not like you"
-        },
-        {
-          "text": "I need to talk to your supervisor"
-        }
-      ],
-      "description": "Express unfavorable feedback."
     }
   ],
   "outputs": [
+    {
+      "intent": "accountbalance",
+      "outpu": "The account balance is"
+    },
+    {
+      "intent":"register",
+      "output": "Go to xxx and follow steps "
+    },
+    {
+      "intent": "Greetings",
+      "output": "Hello how may I help you"
+    },
+    {
+      "intent": "discoTerms",
+      "output": "Go to xxx."
+    },
+    {
+      "intent": "FundTransfer",
+      "0": "Insufficent funds",
+      "1": "Benificary does not exist"
+    },
+    {
+      "intent": "representative",
+      "output": "contact_info"
+    },
+    {
+      "intent": "Lost Card",
+      "output": "card deactivated"
+    },
+    {
+      "intent": "Forgotpassword",
+      "output": "Go to xxx and follow instructions"
+    },
+    {
+      "intent": "Ok",
+      "output": "welcome"
+    }
 
   ]
 }
