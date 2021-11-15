@@ -314,7 +314,7 @@
   "outputs": [
     {
       "intent": "accountbalance",
-      "outpu": "The account balance is"
+      "output": "The account balance is"
     },
     {
       "intent":"register",
@@ -330,15 +330,16 @@
     },
     {
       "intent": "FundTransfer",
-      "0": "Insufficent funds",
-      "1": "Benificary does not exist"
+      "-1": "Successful Transfer",
+      "0": "Insufficient funds",
+      "1": "Beneficiary does not exist"
     },
     {
       "intent": "representative",
-      "output": "contact_info"
+      "output": "Go to xx"
     },
     {
-      "intent": "Lost Card",
+      "intent": "LostCard",
       "output": "card deactivated"
     },
     {

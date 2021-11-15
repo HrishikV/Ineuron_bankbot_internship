@@ -20,7 +20,7 @@ def return_credit_details(cust_id):
     return balance, due
 
 
-def pay_due(cust_id, paid_due):
+""""def pay_due(cust_id, paid_due):
     session = cd.connect_dataset()
     due = session.execute('select due from bank_dataset.credit where cust_id=%s', (cust_id,)).one().due
     due = due - paid_due
@@ -28,21 +28,13 @@ def pay_due(cust_id, paid_due):
     session.commit()
     session.shutdown()
     return due
-
+"""
 
 def check_balance(cust_id):
     session = cd.connect_dataset()
     balance = session.execute('select balance from bank_dataset.debit where cust_id=%s', (cust_id,)).one().balance
     session.shutdown()
     return balance
-
-
-def check_cust_details(cust_id):
-    session = cd.connect_dataset()
-    record = session.execute('select name,phone_number from bank_dataset.cust where cust_id=%s', (cust_id,)).one()
-    name, ph_no = record.name, record.phone_number
-    session.shutdown()
-    return name, ph_no
 
 
 def credit_use(cust_id, req_credit):
