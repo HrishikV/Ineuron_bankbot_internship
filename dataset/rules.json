@@ -90,53 +90,6 @@
       ]
     },
     {
-      "intent": "nonsense",
-      "examples": [
-        {
-          "text": "hahahah"
-        },
-        {
-          "text": "sdjhsjd"
-        },
-        {
-          "text": "this is red"
-        },
-        {
-          "text": "come here"
-        },
-        {
-          "text": "ccc"
-        },
-        {
-          "text": "buffalo"
-        },
-        {
-          "text": "are you mad"
-        },
-        {
-          "text": "are you a fool"
-        },
-        {
-          "text": "ajshajhds"
-        },
-        {
-          "text": "savings"
-        },
-        {
-          "text": "it is bad"
-        },
-        {
-          "text": "is the sky blue"
-        },
-        {
-          "text": "hashahah"
-        },
-        {
-          "text": "hahahaha"
-        }
-      ]
-    },
-    {
       "intent": "discoTerms",
       "examples": [
         {

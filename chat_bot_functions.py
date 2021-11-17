@@ -14,6 +14,7 @@ def get_banking_intent(text):
 
 def get_output(intent, output="output"):
     rule_data_file = './dataset/rules.json'
+    output = str(output)
     with open(rule_data_file, 'r') as f:
         rule_dict = json.load(f)
         for i in rule_dict["outputs"]:
@@ -67,55 +68,57 @@ def main():
             print("Enter customer ID and Password")
             cust_id, password = input().split()
             cust_id = int(cust_id)
+            print(type(cust_id), type(password))
             check = bbf.check_user(cust_id, password)
+            print(check)
         if check:
             c = 1
             while 1:
                 if intent == "accountbalance":
                     if not l:
-                        output = account_balance(cust_id)
+                        output, r = account_balance(cust_id)
                         print(output)
-                        l.append(input().str.lower())
+                        l.append(input().lower())
                     else:
                         output, to = account_balance(cust_id, l[0])
                         print(output)
                         if to == -1:
                             break
                 elif intent == "register":
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
                 elif intent == "nonsense":
                     print("Please don't waste your time here")
                     break
                 elif intent == "discoTerms":
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
                 elif intent == "FundTransfer":
                     if len(l) < 1:
-                        output = fund_transfer(cust_id)
+                        output, r = fund_transfer(cust_id)
                         print(output)
                         l.append(int(input()))
                     elif len(l) < 2:
-                        output = fund_transfer(cust_id, l[0])
+                        output, r = fund_transfer(cust_id, l[0])
                         print(output)
                         l.append(int(input()))
                     else:
                         output = fund_transfer(cust_id, l[0], l[1])
-                        print(output)
+                        print(output[0])
                         break
                 elif intent == "representative":
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
                 elif intent == "LostCard":
                     """put in a function to deactivate the card"""
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
                 elif intent == "Forgotpassword":
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
                 elif intent == "OK":
                     n = 1
-                    print(get_output(intent))
+                    print(get_output(intent)[0])
                     break
         else:
             print("Invalid credentials")

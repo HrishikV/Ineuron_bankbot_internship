@@ -4,9 +4,8 @@ from cassandra.auth import PlainTextAuthProvider
 
 
 def connect_dataset():
-    client_id = 'eqGJcMRfbvJCggwzlZFrFuar'
-    client_secret = 'Rnn,eM323,ZSpZHGgXGPLLGddMxslotgkgKNmrs5.-YvSyB8SwmrIQAPsb-cIL1y6G3HuTbGhhz1Kg' \
-                    '+Cg14ArErpKPIIsZ4Y9u9lJuf6+Q7B7um2QBXPcEETNwTsmOjB '
+    client_id = 'rxJUigxgmKYqfyfkZmLZvRlo'
+    client_secret = '3WNuvDMYSzlP7Q1BKUWS6S0,i3YiKtMijXGoUUL6+pt1TbM9DHC0xv,FGm3CqNBG-kRfrrowXJJELG_47r1mLFlfnJc5ZZrLrNv7yhB68F5b7s-f0FdPJ2mucuGETr8,'
     cloud_config = {
         'secure_connect_bundle': './secure-connect-bankbot.zip'
     }
