@@ -22,26 +22,24 @@ def get_output(intent, output="output"):
                 return i[output]
 
 
-def account_balance(cust_id, acctype=None):
+def account_balance(cust_id=None, acctype=None):
     if acctype is None:
         return "enter account type", 0
     elif acctype == "credit":
         balance, due = bbf.return_credit_details(cust_id)
-        return get_output("accountbalance") + " " + str(balance) + ", " + str(-due), -1
+        return get_output("accountbalance") + " " + str(balance) + ", " + str(-due), 1
     elif acctype == "debit":
         balance = bbf.check_balance(cust_id)
-        return get_output("accountbalance") + " " + str(balance), -1
+        return get_output("accountbalance") + " " + str(balance), 1
     else:
-        return "Invalid acc type", 0
+        return "Invalid acc type", -1
 
 
-def fund_transfer(cust_id, bef_id=None, amount=None):
-    if bef_id is None:
-        return "enter Beneficiary id", 0
-    elif amount is None:
-        return "Enter amount", 1
+def fund_transfer(cust_id=None, bef_id=None, amount=None):
+    if bef_id is None and amount is None:
+        return "enter Beneficiary id and amount",1
     else:
-        return get_output("FundTransfer", bbf.acc_transfer(cust_id, bef_id, amount)), -1
+        return get_output("FundTransfer", bbf.acc_transfer(cust_id, bef_id, amount))
 
 
 def credit_use(cust_id, amount=None):
@@ -55,7 +53,45 @@ def credit_use(cust_id, amount=None):
             return "Insufficient credit", -1
 
 
-def main():
+def initial(text=""):
+    if text == "":
+        return "How may I help you"
+    else:
+        return get_banking_intent(text)
+
+
+def check_veification(cust_id=None, password=None):
+    if cust_id is None and password is None:
+        return "Enter customer ID and Password", 1
+    else:
+        return bbf.check_user(cust_id, password)
+
+
+def register():
+    return get_output("register")
+
+
+def nonsense():
+    return "Please don't waste your time here"
+
+
+def disco_terms():
+    return get_output("discoTerms")
+
+
+def representative():
+    return get_output("representative")
+
+
+def OK():
+    return get_output("OK")
+
+
+def Forgortpassword():
+    return get_output("Forgotpassword")
+
+
+"""def main():
     n = 0
     c = 0
     while 1:
@@ -68,9 +104,7 @@ def main():
             print("Enter customer ID and Password")
             cust_id, password = input().split()
             cust_id = int(cust_id)
-            print(type(cust_id), type(password))
             check = bbf.check_user(cust_id, password)
-            print(check)
         if check:
             c = 1
             while 1:
@@ -110,7 +144,7 @@ def main():
                     print(get_output(intent)[0])
                     break
                 elif intent == "LostCard":
-                    """put in a function to deactivate the card"""
+                    #put in a function to deactivate the card
                     print(get_output(intent)[0])
                     break
                 elif intent == "Forgotpassword":
@@ -123,4 +157,4 @@ def main():
         else:
             print("Invalid credentials")
         if n != 0:
-            break
+            break"""

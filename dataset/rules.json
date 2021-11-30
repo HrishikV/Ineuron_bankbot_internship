@@ -220,7 +220,7 @@
       ]
     },
     {
-      "intent": "Ok",
+      "intent": "OK",
       "examples": [
         {
           "text": "thanks"
@@ -300,7 +300,7 @@
       "output": "Go to xxx and follow instructions"
     },
     {
-      "intent": "Ok",
+      "intent": "OK",
       "output": "welcome"
     }
 
